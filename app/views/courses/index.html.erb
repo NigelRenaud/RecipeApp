@@ -1,0 +1,10 @@
+<h1>Courses#index</h1>
+
+<div class="course-container">
+  <ul>
+    <% @courses.each do |course| %>
+    <li><%= link_to course.name, course_path(course) %></li>
+  </ul>
+  <% end %>
+</div>
+<p>Find me in app/views/courses/index.html.erb</p>

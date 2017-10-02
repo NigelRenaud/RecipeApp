@@ -3,8 +3,8 @@
 <div class="course-container">
   <ul>
     <% @courses.each do |course| %>
-    <li><%= link_to course.name, course_path(course) %></li>
-  </ul>
+    <li><%= link_to course.name, course_recipes_path(course) %></li>
   <% end %>
+  </ul>
 </div>
 <p>Find me in app/views/courses/index.html.erb</p>

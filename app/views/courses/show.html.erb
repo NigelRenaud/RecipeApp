@@ -1,2 +1,9 @@
-<h1>Courses#show</h1>
+<h1><%= @course.name %></h1>
+<ul>
+  <% @recipes.each do |recipe| %>
+  <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+  <p><%= @recipe.description %></p>
+  <% end %>
+
+</ul>
 <p>Find me in app/views/courses/show.html.erb</p>

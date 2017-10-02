@@ -1,2 +1,9 @@
-<h1>Recipes#index</h1>
+<h1>Here are the recipes</h1>
+  <div class="recipe-container">
+  <ul>
+    <% @recipes.each do |recipe| %>
+    <li><%= link_to recipe.name, recipe_ingredient_path(recipe) %></li>
+  <% end %>
+  </ul>
+</div>
 <p>Find me in app/views/recipes/index.html.erb</p>

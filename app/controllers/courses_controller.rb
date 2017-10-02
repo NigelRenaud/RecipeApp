@@ -5,5 +5,6 @@ class CoursesController < ApplicationController
 
   def show
     @course = Course.find(params[:id])
+    @recipes = Recipe.where("course_id = ?", params[:id]).all
   end
 end
